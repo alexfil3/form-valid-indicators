@@ -1,0 +1,67 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 20px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    background-color: #6c6c6c;
+    border: 2px solid black;
+    border-radius: 20px;
+    outline: none;
+    padding: 4px;
+}
+
+input:hover,
+input:focus {
+    border: 2px solid purple;
+    outline: 2px solid purple;
+}
+
+input:user-invalid {
+    border-color: red;
+    outline-color: red;
+}
+
+input:user-valid {
+    border-color: green;
+    outline-color: green;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.error::after {
+    content: "This field should be filled";
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    font-size: 0.8rem;
+    padding: 2px;
+}
+
+.errorBorder {
+    border-color: red;
+}
+
+.errorEmail::after {
+    content: "Use valid email";
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    font-size: 0.8rem;
+    padding: 2px;
+}
